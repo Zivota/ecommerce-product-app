@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  width: 100%;
+}
+
+.avatar {
+  height: 1.5rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(200, 200, 200);
+  }
+
+  .avatar {
+    transform: scale(2);
+    margin-left: 3.5rem;
+  }
+}

@@ -1,0 +1,87 @@
+.menuUl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  background: white;
+  z-index: 10;
+  padding-top: 5rem;
+  padding-left: 1.5rem;
+  list-style: none;
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.menuUl li {
+  margin-top: 1rem;
+}
+
+.menuUl li a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.closed {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .menuUl {
+    position: relative;
+    display: flex;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin-left: 13rem;
+  }
+
+  .menuUl li {
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .menuUl li a {
+    position: relative;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(120, 120, 120);
+    text-decoration: none;
+  }
+
+  .menuUl li a::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 4px;
+    background: rgb(255, 125, 26);
+    left: -10%;
+    top: 3.4rem;
+    opacity: 0;
+  }
+  .menuUl li a:hover::after,
+  .menuUl li a:hover {
+    opacity: 1;
+    color: black;
+    animation: anim 0.1s ease-in-out;
+  }
+
+  @keyframes anim {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}

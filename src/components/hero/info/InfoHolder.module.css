@@ -1,0 +1,67 @@
+.infoHolder {
+  padding: 1rem;
+  max-width: 40rem;
+  margin: auto;
+}
+
+.infoHolder h3 {
+  color: rgb(255, 125, 26);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.infoHolder h1 {
+  padding: 1rem 0;
+  font-size: 1.9rem;
+  color: rgb(29, 32, 37);
+}
+
+.infoHolder p {
+  color: hsl(219, 9%, 45%);
+}
+
+.priceInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priceInfo h1 {
+  font-size: 1.6rem;
+  color: rgb(29, 32, 37);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.priceInfo h1 span {
+  color: rgb(255, 125, 26);
+  margin-left: 1rem;
+  font-size: 1rem;
+  background-color: hsl(25, 100%, 94%);
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+.priceInfo p {
+  font-weight: bold;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 1024px) {
+  .infoHolder {
+    max-width: 30rem;
+  }
+
+  .infoHolder h1 {
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
+
+  .priceInfo h1 {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+  }
+}

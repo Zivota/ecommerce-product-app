@@ -1,0 +1,45 @@
+.mainDiv {
+  max-height: 40rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.imgHolder {
+  position: relative;
+  max-height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.imgHolder img {
+  max-height: 40rem;
+  width: 100%;
+}
+
+.btnHolder {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 48%;
+  margin-left: 5%;
+}
+
+.btn {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn img {
+  height: 1rem;
+  width: 0.7rem;
+}

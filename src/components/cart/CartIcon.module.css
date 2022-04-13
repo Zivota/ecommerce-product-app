@@ -1,0 +1,17 @@
+.cart {
+  position: absolute;
+  margin-left: -2rem;
+  cursor: pointer;
+}
+
+.cart span {
+  position: absolute;
+  bottom: 1rem;
+  left: 0.5rem;
+  font-size: 0.7rem;
+  padding: 0 0.4rem;
+  background: rgb(255, 125, 26);
+  color: white;
+  font-weight: bold;
+  border-radius: 0.3rem;
+}

@@ -1,0 +1,115 @@
+.galleryDesktop {
+  width: 100%;
+  max-width: 35rem;
+}
+
+.cover img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.thumbnail img {
+  height: 6rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.popUpGallery {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+}
+
+.popUpGallery_holder {
+  position: relative;
+  max-width: 45rem;
+  max-height: 40rem;
+}
+
+.popUpGallery_gallery {
+  height: 100%;
+  width: 100%;
+}
+
+.popUpGallery_gallery img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.popUpGallery_thumbnail {
+  max-width: 45rem;
+}
+
+.popUpGallery_thumbnail img {
+  height: 6rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.popUpGallery_buttons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 110%;
+  top: 45%;
+  left: -5%;
+}
+
+.galleryBtn {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: none;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+}
+
+.galleryBtn:hover img {
+  filter: invert(53%) sepia(66%) saturate(1959%) hue-rotate(348deg)
+    brightness(103%) contrast(101%);
+}
+
+.galleryBtn:active {
+  transform: scale(0.9);
+}
+
+.closeBtn {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff7d1a;
+  transition: 0.1s all ease-in-out;
+}
+
+.closeBtn:active {
+  transform: scale(0.9);
+}
+.closeBtn img {
+  height: 1.5rem;
+  filter: invert(53%) sepia(66%) saturate(1959%) hue-rotate(348deg)
+    brightness(103%) contrast(101%);
+}

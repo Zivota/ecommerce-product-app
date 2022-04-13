@@ -1,0 +1,12 @@
+.btn {
+  position: relative;
+  background: none;
+  border: none;
+  z-index: 20;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    display: none;
+  }
+}
